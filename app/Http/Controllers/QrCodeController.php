@@ -43,7 +43,7 @@ final readonly class QrCodeController
                 /** @var string $qrCode */
                 echo $qrCode;
             },
-            'pinkary_'.$user->username.'.png',
+            'misuh_'.$user->username.'.png',
             ['Content-Type' => 'image/png']
         );
     }

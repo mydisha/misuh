@@ -32,7 +32,7 @@ final class PendingNotifications extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '🌸 Pinkary: You Have '.$this->pendingNotificationsCount.' '.str('Notification')->plural($this->pendingNotificationsCount).'! - '.now()->format('F j, Y'),
+            subject: '😡 Misuh: Lu tuh punya '.$this->pendingNotificationsCount.' '.str('Notification')->plural($this->pendingNotificationsCount).'! - '.now()->format('F j, Y'),
         );
     }
 

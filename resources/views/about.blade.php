@@ -57,7 +57,7 @@
             style="font-stretch: 120%"
         >
             Create a landing page for all your links and connect with like-minded people
-            <span class="text-pink-500">without the noise</span>.
+            <span class="text-teal-500">without the noise</span>.
         </h2>
 
         <section class="mt-28 w-full max-w-2xl">

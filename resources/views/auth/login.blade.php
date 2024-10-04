@@ -33,22 +33,22 @@
                 :value="__('Password')"
             />
 
-            <div 
+            <div
                 class="relative"
-                x-data="{ showPassword: false }" 
+                x-data="{ showPassword: false }"
             >
-                <x-text-input 
-                    id="password" 
-                    class="mt-1 block w-full pr-10" 
+                <x-text-input
+                    id="password"
+                    class="mt-1 block w-full pr-10"
                     x-bind:type="showPassword ? 'text' : 'password'"
                     name="password"
-                    required 
+                    required
                     autocomplete="current-password"
                 />
                 <div class="absolute inset-y-0 right-0 flex items-center pr-3">
                     <button type="button" x-on:click="showPassword = !showPassword">
-                        <x-icons.eye x-show="showPassword" class="size-5 text-slate-400 hover:text-pink-500" />
-                        <x-icons.eye-off x-show="!showPassword" class="size-5 text-slate-400 hover:text-pink-500" />
+                        <x-icons.eye x-show="showPassword" class="size-5 text-slate-400 hover:text-teal-500" />
+                        <x-icons.eye-off x-show="!showPassword" class="size-5 text-slate-400 hover:text-teal-500" />
                     </button>
                 </div>
             </div>

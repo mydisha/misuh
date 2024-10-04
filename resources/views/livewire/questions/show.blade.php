@@ -166,7 +166,7 @@
                     <button
                         data-navigate-ignore="true"
                         @click="showButtonAction"
-                        class="text-sm text-pink-500 flex ml-auto"
+                        class="text-sm text-teal-500 flex ml-auto"
                         x-text="showMoreButtonText"
                     ></button>
                 </div>
@@ -185,7 +185,7 @@
                         @endif
                         title="{{ Number::format($question->children_count) }} {{ str('Comment')->plural($question->children_count) }}"
                         @class([
-                            "flex items-center transition-colors group-hover:text-pink-500 dark:hover:text-slate-400 hover:text-slate-600 focus:outline-none",
+                            "flex items-center transition-colors group-hover:text-teal-500 dark:hover:text-slate-400 hover:text-slate-600 focus:outline-none",
                             "cursor-pointer" => ! $commenting,
                         ])
                     >
@@ -269,7 +269,7 @@
                         <x-slot name="trigger">
                             <button
                                 data-navigate-ignore="true"
-                                x-bind:class="{ 'text-pink-500 hover:text-pink-600': open,
+                                x-bind:class="{ 'text-teal-500 hover:text-teal-600': open,
                                                 'text-slate-500 dark:hover:text-slate-400 hover:text-slate-600': !open }"
                                 title="Share"
                                 class="flex items-center transition-colors duration-150 ease-in-out focus:outline-none"

@@ -122,7 +122,7 @@
                     id="terms"
                     name="terms"
                     type="checkbox"
-                    class="mr-2 h-4 w-4 rounded border-gray-300 text-pink-600 focus:ring-pink-600"
+                    class="mr-2 h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-pink-600"
                 />
 
                 <x-input-label for="terms">
@@ -130,14 +130,14 @@
                     <a
                         target="_blank"
                         href="{{ route('terms') }}"
-                        class="text-pink-500 underline hover:no-underline"
+                        class="text-teal-500 underline hover:no-underline"
                         >Terms of Service</a
                     >
                     and
                     <a
                         target="_blank"
                         href="{{ route('privacy') }}"
-                        class="text-pink-500 underline hover:no-underline"
+                        class="text-teal-500 underline hover:no-underline"
                         >Privacy Policy</a
                     >.
                 </x-input-label>

@@ -18,7 +18,7 @@
                 </div>
 
                 <div>
-                    <div class="mx-auto w-full max-w-md px-4 py-10 sm:px-0">
+                    <div class="mx-auto w-full max-w-md px-4 mt-20 py-10 sm:px-0">
                         {{ $slot }}
                     </div>
                 </div>

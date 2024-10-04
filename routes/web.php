@@ -38,15 +38,13 @@ Route::post('/profile/timezone', [UserTimezoneController::class, 'update'])->nam
 
 Route::prefix('/@{username}')->group(function () {
     Route::get('/', [UserController::class, 'show'])
-        ->name('profile.show')
-        ->middleware(EnsureVerifiedEmailsForSignInUsers::class);
+        ->name('profile.show');
 
     Route::get('questions/{question}', [QuestionController::class, 'show'])
-        ->name('questions.show')
-        ->middleware(EnsureVerifiedEmailsForSignInUsers::class);
+        ->name('questions.show');
 });
 
-Route::group(['middleware' => ['auth', 'verified']], function () {
+Route::group(['middleware' => ['auth']], function () {
     Route::get('bookmarks', [BookmarksController::class, 'index'])->name('bookmarks.index');
 
     Route::get('notifications', [NotificationController::class, 'index'])->name('notifications.index');

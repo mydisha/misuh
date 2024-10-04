@@ -5,7 +5,7 @@
 
 @php
     $isUserProfileOwner = auth()->user()?->is($user);
-    $linkWithRef = $link->url . (str_contains($link->url, '?') ? '&' : '?') . 'ref=pinkary';
+    $linkWithRef = $link->url . (str_contains($link->url, '?') ? '&' : '?') . 'ref=misuh';
 @endphp
 
 <a

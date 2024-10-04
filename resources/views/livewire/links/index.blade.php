@@ -8,7 +8,7 @@
             <x-dropdown-link-profile>
                 <x-slot name="trigger">
                     <button
-                        x-bind:class="{ 'bg-pink-500 hover:bg-pink-500 text-white hover:text-white': open,
+                        x-bind:class="{ 'bg-teal-500 hover:bg-teal-500 text-white hover:text-white': open,
                                         'dark:bg-slate-900 bg-slate-50 dark:hover:bg-slate-800 hover:bg-slate-100 border dark:border-transparent border-slate-200': !open }"
                                     class="mr-2 flex size-10 items-center justify-center rounded-lg dark:text-slate-300 text-slate-600 transition duration-150 ease-in-out "
                     >

@@ -17,7 +17,7 @@
                     @foreach ($releases as $version => $release)
                         <li class="relative flex">
                             <div class="relative mr-4 mt-3.5 hidden size-6 flex-none items-center justify-center sm:flex">
-                                <div class="size-1.5 rounded-full bg-pink-500 ring-1 ring-pink-500"></div>
+                                <div class="size-1.5 rounded-full bg-teal-500 ring-1 ring-pink-500"></div>
                             </div>
 
                             <div class="relative flex-1 overflow-hidden rounded-xl border dark:bg-transparent bg-slate-100 dark:border-slate-900 border-slate-200 dark:shadow-none shadow-sm shadow-slate-200">

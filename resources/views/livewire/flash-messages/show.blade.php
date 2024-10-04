@@ -20,7 +20,7 @@ x-data="{
     <template id="flashMessageTemplate">
         <div
             role="alert"
-            class="mt-12 rounded-lg bg-pink-500 px-4 py-3 text-white"
+            class="mt-12 rounded-lg bg-teal-500 px-4 py-3 text-white"
         >
             {notificationText}
         </div>

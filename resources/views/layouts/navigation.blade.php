@@ -26,20 +26,6 @@
                     </a>
 
                     <a
-                        title="Source code"
-                        target="_blank"
-                        href="https://github.com/pinkary-project/pinkary.com"
-                        class=""
-                    >
-                        <button
-                            type="button"
-                            class="dark:text-slate-500 text-slate-400 dark:hover:text-slate-100 hover:text-slate-900 inline-flex items-center rounded-md border dark:border-transparent border-slate-200 dark:bg-slate-900 bg-slate-50 px-3 py-2 text-sm font-medium leading-4 transition duration-150 ease-in-out focus:outline-none"
-                        >
-                            <x-heroicon-o-code-bracket class="h-6 w-6"/>
-                        </button>
-                    </a>
-
-                    <a
                         title="Profile"
                         href="{{ route('profile.show', ['username' => auth()->user()->username]) }}"
                         class=""
@@ -101,20 +87,17 @@
                     <x-slot name="content">
                         <x-dropdown-button x-data="themeSwitch()" class="flex flex-col items-center justify-between dark:hover:bg-transparent hover:bg-transparent">
                             <div class="flex flex-row justify-between gap-2">
-                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'light' ? 'bg-pink-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('light')">
+                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'light' ? 'bg-teal-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('light')">
                                     <x-heroicon-o-sun class="w-4 h-4"/>
                                 </div>
-                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'dark' ? 'bg-pink-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('dark')">
+                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'dark' ? 'bg-teal-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('dark')">
                                     <x-heroicon-o-moon class="w-4 h-4"/>
                                 </div>
-                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'system' ? 'bg-pink-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('system')">
+                                <div class="rounded-md px-4 py-2 border dark:border-slate-800 border-slate-200" x-bind:class="theme == 'system' ? 'bg-teal-600 text-slate-50' : 'dark:hover:bg-slate-800/50 hover:bg-slate-200/50'" @click="setTheme('system')">
                                     <x-heroicon-o-computer-desktop class="w-4 h-4"/>
                                 </div>
                             </div>
                         </x-dropdown-button>
-                        <x-dropdown-link :href="route('about')">
-                            {{ __('About') }}
-                        </x-dropdown-link>
                         @auth
                             <x-dropdown-link :href="route('profile.edit')">
                                 {{ __('Settings') }}

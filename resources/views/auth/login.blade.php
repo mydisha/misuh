@@ -75,16 +75,6 @@
         </div>
 
         <div class="mt-4 flex items-center justify-end space-x-3.5">
-            @if (Route::has('password.request'))
-                <a
-                    class="text-sm dark:text-slate-200 text-slate-800 underline hover:no-underline"
-                    href="{{ route('password.request') }}"
-                    wire:navigate
-                >
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
             <x-primary-button>
                 {{ __('Log In') }}
             </x-primary-button>

@@ -48,7 +48,7 @@
                 class="mt-5 rounded-full bg-teal-500 bg-opacity-90 px-3 py-1.5 font-mona text-sm font-medium uppercase text-slate-900"
                 style="font-stretch: 120%"
             >
-                One link. All your socials.
+                Marah ya luapin jangan di tahan
             </div>
         </section>
 

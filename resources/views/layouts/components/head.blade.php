@@ -23,7 +23,7 @@
 />
 <meta
     name="description"
-    content="{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials."
+    content="{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan"
     data-rh="true"
 />
 <meta
@@ -108,7 +108,7 @@
     />
     <meta
         property="og:description"
-        content="{{ $user->bio ?: 'One Link. All Your Socials.' }}"
+        content="{{ $user->bio ?: 'Marah ya luapin jangan di tahan' }}"
         data-rh="true"
     />
     <meta
@@ -158,15 +158,15 @@
             data-rh="true"
         />
     @else
-        <title>{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials.</title>
+        <title>{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan</title>
         <meta
             property="og:title"
-            content="{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials."
+            content="{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan"
             data-rh="true"
         />
     @endif
 @else
-    <title>{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials.</title>
+    <title>{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan</title>
     <meta
         property="og:type"
         content="website"
@@ -174,12 +174,12 @@
     />
     <meta
         property="og:title"
-        content="{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials."
+        content="{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan"
         data-rh="true"
     />
     <meta
         property="og:description"
-        content="{{ config('app.name', 'Pinkary') }} - One Link. All Your Socials."
+        content="{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan"
         data-rh="true"
     />
     <meta

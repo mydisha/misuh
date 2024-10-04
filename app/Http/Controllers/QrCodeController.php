@@ -31,8 +31,7 @@ final readonly class QrCodeController
             ->size(512)
             ->format('png')
             ->backgroundColor(...$bgColor)
-            ->color(236, 72, 153, 100)
-            ->merge('/public/img/ico.png')
+            ->color(0, 128, 128)
             ->errorCorrection('M')
             ->generate(route('profile.show', [
                 'username' => $user->username,

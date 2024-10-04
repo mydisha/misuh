@@ -1,50 +1,28 @@
 {
-  "id": "pinkary",
-  "background_color": "#030712",
-  "description": "Pinkary allows you to create a minimal profile page that showcases all the important links you wish to share with your followers.",
+  "id": "misuh",
+  "background_color": "#008080",
+  "description": "Marah ya luapin jangan di tahan",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Pinkary",
+  "name": "Misuh Online",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "Pinkary",
+  "short_name": "Misuh",
   "start_url": "/",
-  "theme_color": "#030712",
+  "theme_color": "#008080",
   "icons": [
     {
-      "src": "https://pinkary.com/img/ico.svg",
+      "src": "",
       "type": "image/x-icon"
     },
     {
-      "src": "https://pinkary.com/img/ico.png",
+      "src": "",
       "type": "image/png",
       "sizes": "1024x1024"
     },
     {
       "src": "/img/ico.svg",
       "type": "image/x-icon"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "https://pinkary.com/screenshots/1.png",
-      "type": "image/png",
-      "sizes": "852x1528"
-    },
-    {
-      "src": "https://pinkary.com/screenshots/2.png",
-      "type": "image/png",
-      "sizes": "852x1528"
-    },
-    {
-      "src": "https://pinkary.com/screenshots/3.png",
-      "type": "image/png",
-      "sizes": "852x1528"
-    },
-    {
-      "src": "https://pinkary.com/screenshots/4.png",
-      "type": "image/png",
-      "sizes": "852x1528"
     }
   ],
   "categories": [

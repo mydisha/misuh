@@ -9,7 +9,7 @@
 />
 <meta
     name="author"
-    content="Pinkary"
+    content="Misuh"
 />
 <meta
     name="google"
@@ -23,7 +23,7 @@
 />
 <meta
     name="description"
-    content="{{ config('app.name', 'Pinkary') }} - Marah ya luapin jangan di tahan"
+    content="{{ config('app.name', 'Misuh') }} - Marah ya luapin jangan di tahan"
     data-rh="true"
 />
 <meta
@@ -38,7 +38,7 @@
 />
 <meta
     name="keywords"
-    content="Pinkary, pinkary, links, link, cv, portfolio, aggregation, platform, social, media, profile, bio, tree"
+    content="Misuh, marah, kesel, curhat"
     data-rh="true"
 />
 <meta
@@ -47,7 +47,7 @@
 />
 <meta
     name="apple-mobile-web-app-title"
-    content="Pinkary"
+    content="Misuh"
 />
 <meta
     name="apple-mobile-web-app-status-bar-style"
@@ -56,13 +56,13 @@
 
 <link
     rel="shortcut icon"
-    href="https://pinkary.com/img/ico.svg"
+    href=""
     type="image/x-icon"
 />
 
 <link
     rel="apple-touch-icon"
-    href="https://pinkary.com/img/apple-touch-icon.png"
+    href=""
 />
 
 <link
@@ -76,7 +76,7 @@
 />
 
 <meta
-    content="Pinkary"
+    content="Misuh"
     property="og:site_name"
 />
 <meta
@@ -90,7 +90,7 @@
         $user = request()->route('username');
     @endphp
 
-    <title>{{ $user->name }} ({{ '@'.$user->username }}) / Pinkary</title>
+    <title>{{ $user->name }} ({{ '@'.$user->username }}) / {{ config('app.name') }}</title>
     <meta
         property="og:type"
         content="profile"
@@ -103,7 +103,7 @@
     />
     <meta
         property="og:title"
-        content="{{ $user->name }} ({{ '@'.$user->username }}) / Pinkary"
+        content="{{ $user->name }} ({{ '@'.$user->username }}) / {{ config('app.name') }}"
         data-rh="true"
     />
     <meta
@@ -125,7 +125,7 @@
         $content = $toMeta($question->content);
         $answer = $question->answer ? $toMeta($question->answer) : null;
         $isSharedUpdate = $question->isSharedUpdate();
-        $ogTitle = ($isSharedUpdate ? $question->to->name.' On Pinkary' : $question->to->name.': "'.$answer.'" / Pinkary');
+        $ogTitle = ($isSharedUpdate ? $question->to->name.' On Misuh' : $question->to->name.': "'.$answer.'" / Misuh');
         $ogDescription = ($isSharedUpdate ? $answer : ($question->anonymously ? 'Question' : 'Question from '.$question->from->name).': "'.$content.'"');
     @endphp
 
@@ -151,7 +151,7 @@
     />
 
     @if ($answer)
-        <title>{{ $question->to->name }}: "{!! Str::limit($answer, 50, preserveWords: true) !!}" / Pinkary</title>
+        <title>{{ $question->to->name }}: "{!! Str::limit($answer, 50, preserveWords: true) !!}" / {{ config('app.name') }}</title>
         <meta
             property="og:title"
             content='{{ $ogTitle }}'
@@ -184,7 +184,7 @@
     />
     <meta
         property="og:image"
-        content="https://pinkary.com/img/logo-mid.png"
+        content=""
         data-rh="true"
     />
 @endif

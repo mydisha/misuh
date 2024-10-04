@@ -2,7 +2,7 @@
     @if ($followingQuestions->isEmpty())
         <section class="rounded-lg">
             <p class="my-8 text-center text-lg text-slate-500">
-                We haven't found any questions that may interest you based on the activity you've done on Pinkary.
+                We haven't found any questions that may interest you based on the activity you've done on Misuh.
             </p>
         </section>
     @else
